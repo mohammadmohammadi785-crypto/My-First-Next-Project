@@ -1,6 +1,11 @@
-export default function Home() {
+import React from "react";
+
+function Home() {
   return (
-    <main className="bg-gray-950 text-gray-100 scroll-smooth">
-    </main>
+    <div>
+      <h1 className="font-bold text-4xl text-center">Welcome to the Home Page</h1>
+    </div>
   );
 }
+
+export default Home;

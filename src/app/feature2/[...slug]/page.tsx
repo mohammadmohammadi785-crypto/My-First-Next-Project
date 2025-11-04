@@ -5,7 +5,7 @@ async function page({ params }: { params: Promise<{ slug: string }> }) {
   if (slug?.length === 2) {
     return (
       <div>
-        <h1 className="text-3xl text-center text-red-500">
+        <h1 className="text-3xl text-center text-green-500">
           this is a feature of {slug[0]} and concept of {slug[1]}
         </h1>
       </div>
@@ -13,7 +13,7 @@ async function page({ params }: { params: Promise<{ slug: string }> }) {
   } else if (slug?.length === 1) {
     return (
       <div>
-        <h1 className="text-3xl text-center text-red-500">
+        <h1 className="text-3xl text-center text-green-500">
           this is a feature of {slug[0]}
         </h1>
       </div>

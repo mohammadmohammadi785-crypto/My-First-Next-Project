@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Vazirmatn } from "next/font/google";
-import "./globals.css";
-
 const inter = Inter({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,16 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter} ${Vazir} antialiased`}>
-        <nav className="text-center p-2 text-2xl bg-gray-400 text-white">
-          <h1>header</h1>
-        </nav>
-        <h1 className="text-6xl text-center">This is the Root page</h1>
+        <h1 className="text-center text-4xl p-4">
+          This is the nested post page
+        </h1>
         {children}
-        <footer className="text-center p-2 text-2xl bg-gray-600 text-white">
-          <h1>footer</h1>
-        </footer>
       </body>
     </html>
   );
 }
-// edit the leyout

@@ -24,16 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter} ${Vazir} antialiased`}>
-        <nav className="text-center p-2 text-2xl bg-gray-400 text-white">
-          <h1>header</h1>
-        </nav>
-        <h1 className="text-6xl text-center">This is the Root page</h1>
-        {children}
-        <footer className="text-center p-2 text-2xl bg-gray-600 text-white">
-          <h1>footer</h1>
-        </footer>
-      </body>
+      <body className={`${inter} ${Vazir} antialiased`}>{children}</body>
     </html>
   );
 }

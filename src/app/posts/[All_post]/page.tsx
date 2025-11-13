@@ -1,4 +1,16 @@
-async function page({ params }: { params: Promise<{ All_post: string }> }) {
+type props = {
+  params: Promise<{ All_post: string }>;
+};
+import { Metadata } from "next";
+export const generateMetadata = async ({
+  params,
+}: props): Promise<Metadata> => {
+  const All_post = (await params).All_post;
+  return {
+    title: `Post ${All_post}`,
+  };
+};
+async function page({ params }: props) {
   const All_post = (await params).All_post;
   return (
     <div>

@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Vazirmatn } from "next/font/google";
-const inter = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// import { Inter, Vazirmatn } from "next/font/google";
+// const inter = Inter({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const Vazir = Vazirmatn({
-  variable: "--font-Vazirmatn",
-  subsets: ["latin"],
-});
+// const Vazir = Vazirmatn({
+//   variable: "--font-Vazirmatn",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next 16",
@@ -22,10 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter} ${Vazir} antialiased`}>
+      <body className={`antialiased`}>
         <h1 className="text-center text-4xl p-4">
           This is the nested post page
         </h1>
+
         {children}
       </body>
     </html>

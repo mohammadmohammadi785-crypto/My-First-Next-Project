@@ -1,6 +1,8 @@
-import React from "react";
-
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 export default function Navbar() {
+  const pathname = usePathname();
   const navLinks: { id: number; name: string; href: string }[] = [
     {
       id: 1,
@@ -22,10 +24,49 @@ export default function Navbar() {
       name: "Contact",
       href: "/contact",
     },
+    {
+      id: 5,
+      name: "Counter",
+      href: "/count",
+    },
+    {
+      id: 6,
+      name: "Posts",
+      href: "/posts",
+    },
+    {
+      id: 7,
+      name: "Articles",
+      href: "/articles/1",
+    },
+    {
+      id: 8,
+      name: "Login",
+      href: "/login",
+    },
   ];
   return (
     <div>
-    
+      <nav className="flex justify-between p-4">
+        {navLinks.map((nav) => {
+          const isActive =
+            pathname === nav.href ||
+            (pathname.startsWith(nav.href) && nav.href !== "/");
+          return (
+            <Link
+              className={
+                isActive
+                  ? "text-orange-500 font-bold"
+                  : "text-gray-500 font-bold"
+              }
+              key={nav.id}
+              href={nav.href}
+            >
+              {nav.name}
+            </Link>
+          );
+        })}
+      </nav>
     </div>
   );
 }

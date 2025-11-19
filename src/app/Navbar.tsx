@@ -44,6 +44,16 @@ export default function Navbar() {
       name: "Login",
       href: "/login",
     },
+    {
+      id: 9,
+      name: "Forgotpassword",
+      href: "/forgotPassword",
+    },
+    {
+      id: 10,
+      name: "Regester",
+      href: "/register",
+    },
   ];
   return (
     <div>

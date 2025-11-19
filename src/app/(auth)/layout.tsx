@@ -18,12 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
-        {/* <h1 className="text-center font-bold text-5xl mb-3 text-gray-400">
-          this is the Auth Page
-        </h1> */}
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }

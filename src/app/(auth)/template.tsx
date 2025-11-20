@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 // import { Inter, Vazirmatn } from "next/font/google";
 import "../globals.css";
+import Input from "./Input";
 
 // const inter = Inter({
 //   variable: "--font-geist-sans",
@@ -18,7 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Input />
+        {children}
+      </body>
     </html>
   );
 }

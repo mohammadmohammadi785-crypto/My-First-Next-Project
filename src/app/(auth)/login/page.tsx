@@ -1,11 +1,10 @@
 import React from "react";
 
-function page() {
+async function page() {
+  await new Promise((resolve) => setTimeout(resolve, 10000));
   return (
     <div>
-      <h1 className="text-5xl text-center font-bold">
-        This is the login Page
-      </h1>
+      <h1 className="text-5xl text-center font-bold">This is the login Page</h1>
     </div>
   );
 }

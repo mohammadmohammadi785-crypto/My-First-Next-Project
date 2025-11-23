@@ -10,8 +10,15 @@ export const generateMetadata = async ({
     title: `All Post is ${All_post}`,
   };
 };
+function randomNumber(num: number) {
+  return Math.floor(Math.random() * num);
+}
 async function page({ params }: props) {
   const All_post = (await params).All_post;
+  const getRandomNumber = randomNumber(2);
+  if (getRandomNumber === 1) {
+    throw new Error("Post page is Error");
+  }
   return (
     <div>
       <h1 className="text-5xl text-center">All post is {All_post}</h1>

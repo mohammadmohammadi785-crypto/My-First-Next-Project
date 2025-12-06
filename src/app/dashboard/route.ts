@@ -6,7 +6,7 @@ export function GET() {
 export async function POST(request: Request) {
   const data = await request.json();
   const newBlog = {
-    id: blog.length + 1,
+    id: data.id,
     name: data.name,
     icon: data.icon,
     text: data.text,

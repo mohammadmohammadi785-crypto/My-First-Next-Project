@@ -8,6 +8,7 @@ export async function POST(request: Request) {
   const newBlog = {
     id: blog.length + 1,
     name: data.name,
+    icon: data.icon,
     text: data.text,
   };
   blog.push(newBlog);

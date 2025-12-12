@@ -54,6 +54,11 @@ export default function Navbar() {
       name: "Register",
       href: "/regester",
     },
+    {
+      id: 11,
+      name: "Feature",
+      href: "/feature",
+    },
   ];
   return (
     <div>

@@ -3,8 +3,8 @@ import { NextRequest } from "next/server";
 export async function GET(request: NextRequest) {
   const headerContent = await headers();
   console.log(headerContent.get("accept"));
-  const cookieInformation = request.cookies.get("theme");
-  console.log(cookieInformation);
+  const cookieInfo = request.cookies.get("theme");
+  console.log(cookieInfo);
   const newCookie = await cookies();
   newCookie.set("LoggedIn", "Mohammad Mohammadi");
   console.log(newCookie.get("LoggedIn"));

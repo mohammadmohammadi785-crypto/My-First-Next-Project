@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`antialiased`}>
-        <div className="w-full h-screen bg-gray-700 text-white">
+        <div className="w-full h-screen bg-black text-white">
           <Navbar />
           {children}
         </div>

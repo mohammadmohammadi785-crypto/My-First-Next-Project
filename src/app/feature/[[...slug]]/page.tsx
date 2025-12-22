@@ -1,5 +1,3 @@
-import React from "react";
-
 async function page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   if (slug?.length === 2) {

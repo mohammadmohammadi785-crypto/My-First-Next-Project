@@ -11,56 +11,41 @@ export default function Navbar() {
     },
     {
       id: 2,
-      name: "feature",
-      href: "/feature",
-    },
-    {
-      id: 3,
-      name: "About",
-      href: "/about",
-    },
-    {
-      id: 4,
-      name: "Contact",
-      href: "/contact",
-    },
-    {
-      id: 5,
       name: "Counter",
       href: "/count",
     },
     {
-      id: 6,
+      id: 3,
       name: "Posts",
       href: "/posts",
     },
     {
-      id: 7,
+      id: 4,
       name: "Articles",
       href: "/articles/1",
     },
     {
-      id: 8,
+      id: 5,
       name: "Login",
       href: "/login",
     },
     {
-      id: 9,
+      id: 6,
       name: "Forgotpassword",
       href: "/forgotPassword",
     },
     {
-      id: 10,
+      id: 7,
       name: "Register",
       href: "/regester",
     },
     {
-      id: 11,
+      id: 8,
       name: "Feature",
       href: "/feature",
     },
     {
-      id: 12,
+      id: 9,
       name: "Dashboard",
       href: "/dashboard",
     },
